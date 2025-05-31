@@ -2,7 +2,7 @@
 
 Esta aplicación móvil ha sido desarrollada en **Android Studio con Java** y está conectada a un **backend en PHP** para gestionar una biblioteca digital. Permite a los usuarios administrar categorías, editoriales, autores, libros, lectores y préstamos, además de alertar cuando un libro no ha sido devuelto. También implementa un sistema de roles para el control de acceso.
 
-![Vistas]()
+![Vistas](https://github.com/HLBrandon/app-gestor-material-bibliografico/blob/a386fb89b599da80aabfe1d48f6ecc94e3aace78/img/portada.png)
 
 ## Características principales
 - **Gestión completa** de categorías, editoriales, autores, libros, lectores y usuarios.
@@ -27,7 +27,7 @@ Sigue estos pasos para instalar la aplicación:
 1. **Descargar el código**
     - Clonar el repositorio con:
       ```sh
-      git clone https://github.com/usuario/proyecto-android.git
+      git clone https://github.com/HLBrandon/app-gestor-material-bibliografico.git
       ```
     - O descargar el ZIP y extraerlo en la ubicación deseada.
 
