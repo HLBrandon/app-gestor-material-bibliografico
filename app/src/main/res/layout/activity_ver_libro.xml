@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerLibroActivity">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <ImageButton
+                    android:id="@+id/btnVolver"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:backgroundTint="@color/gris_oscuro"
+                    android:src="@drawable/icono_arrow_back_24_white"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Escanear" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Detalles del Libros"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <!-- Tarjeta de información del libro -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/txtTitulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Título del libro"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtISBN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ISBN: XXXXX"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/txtAutor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Autor: Nombre"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/txtAnioPublicacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Año de publicación: XXXX"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/txtEditorial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Editorial: Nombre"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tarjeta de información del almacenamiento -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/txtCategoria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Categoría: XXXX"
+                        android:textSize="18dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtPasillo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pasillo: X"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/txtExistencias"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Existencias: XX"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--
+                <Button
+                    android:id="@+id/btnPrestar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prestar Libro"
+                    android:textSize="20dp"
+                    android:backgroundTint="@color/color_primario_oscuro" /> -->
+
+                <Button
+                    android:id="@+id/btnModificar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Modificar Libro"
+                    android:backgroundTint="@color/color_primario" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerPrestamoActivity">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Encabezado principal -->
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <ImageButton
+                    android:id="@+id/btnVolver"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:backgroundTint="@color/gris_oscuro"
+                    android:src="@drawable/icono_arrow_back_24_white"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Escanear" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Detalles del Prestamo"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <!-- Tarjeta de información del prestamo -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/lb_informacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Información del prestamo"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/lb_codigo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cod: 1"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/lb_fecha_prestamo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha de prestamo: "
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/lb_fecha_devolucion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha de devolucion: "
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/lb_estatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prestado"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tarjeta de información del libro -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/lb_info_libro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Información del libro"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/lb_titulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Titulo del libro"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/lb_isbn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ISBN del libro"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/lb_autor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Autor del libro"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tarjeta de información del libro -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/lb_infor_solicitante"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Información del solicitante"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/lb_nombre_lector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre del Solicitante"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/lb_correo_lector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="correo@example.com"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/lb_telefono_lector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="232XXXAAQQ"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/lb_direccion_lector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Calle de ejemplo numero tal"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tarjeta de información del libro -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/lb_info_prestador"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Información del Prestador"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/lb_nombre_usuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre del Solicitante"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Botones de cancelar y devolver -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnCancelar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cancelar"
+                    android:backgroundTint="@color/color_primario_oscuro"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/btnDevolver"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Devolver"
+                    android:backgroundTint="@color/color_primario"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnEnviarCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notificar retraso"
+                android:visibility="gone"
+                android:backgroundTint="@color/color_secundario_claro"/>
+
+            <Button
+                android:id="@+id/btnPerder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Libro perdido"
+                android:visibility="gone"
+                android:backgroundTint="@color/color_secundario_oscuro"
+                android:layout_marginBottom="60dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

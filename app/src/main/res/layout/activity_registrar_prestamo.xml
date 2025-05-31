@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarPrestamoActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Titulo de la actividad -->
+        <TextView
+            android:id="@+id/lb_titulo_registrar_libro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prestar Libro"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginVertical="20dp" />
+
+        <!-- ISBN -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ISBN del Libro:"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="20dp" />
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/lb_titulo_registrar_libro"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp">
+
+            <EditText
+                android:id="@+id/txtISBN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:hint="ISBN"
+                android:inputType="number"
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:id="@+id/btnSc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:backgroundTint="@color/color_secundario"
+                android:src="@drawable/icono_document_scanner_white_24"
+                android:scaleType="centerInside"
+                android:contentDescription="Escanear" />
+
+        </LinearLayout>
+
+        <!-- Tarjeta de información del libro -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_libro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/lbTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Título del libro"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/lbAutor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Autor: Nombre"
+                    android:textSize="15dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/lbAnioPublicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Año de publicación: XXXX"
+                    android:textSize="15dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/lbEditorial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Editorial: Nombre"
+                    android:textSize="15dp"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ID LECTOR -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="N° de Control del Lector:"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="20dp" />
+
+        <LinearLayout
+            android:id="@+id/container_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/lb_titulo_registrar_libro"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/txtLectorId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:hint="Código"
+                android:inputType="number"
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:id="@+id/btnSc2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:backgroundTint="@color/color_secundario"
+                android:src="@drawable/icono_document_scanner_white_24"
+                android:scaleType="centerInside"
+                android:contentDescription="Escanear" />
+
+        </LinearLayout>
+
+        <!-- Tarjeta de información del lector -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_lector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/lbNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre"
+                    android:textSize="15dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/lbCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Correo"
+                    android:textSize="15dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/lbTelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="telefono"
+                    android:textSize="15dp"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Botones de crear y volver atras -->
+        <Button
+            android:id="@+id/btnPrestar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hacer Prestamo"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/color_primario_oscuro"
+            android:layout_marginHorizontal="20dp"
+            android:padding="15dp"
+            android:layout_below="@+id/txtStoke" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:backgroundTint="@color/gris_oscuro"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="40dp"
+            android:layout_below="@+id/btnCrear" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

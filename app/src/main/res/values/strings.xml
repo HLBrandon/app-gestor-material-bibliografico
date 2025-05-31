@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Biblioteca</string>
+    <string name="titulo_principal">Sistema de Gestión de Material Bibliográfico</string>
+
+    <!-- Strings para el login y logout -->
+    <string name="username">Nombre de Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="cerrar_sesion">Salir</string>
+
+    <!-- Strings para el home -->
+    <string name="titulo_home">Home</string>
+    <string name="btn_nuevo_libro">Nuevo Libro</string>
+    <string name="btn_consultar_libro">Consultar Libro</string>
+    <string name="btn_nuevo_usuario">Nuevo Usuario</string>
+
+
+</resources>

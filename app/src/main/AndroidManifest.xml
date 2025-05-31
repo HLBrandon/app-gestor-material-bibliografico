@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Habilitar para enviar información desde servidores externos -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Habilitar las notificaciones -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Biblioteca"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".VerHistorialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListarHistorialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListarRetrasosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerPrestamoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListarPrestamosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarPrestamoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerLectorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarLectorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListarLectoresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerUsuarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarUsuarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListarUsuariosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ModificarLibroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerLibroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarAutorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerAutorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListarAutoresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarEditorialesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerEditorialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListarEditorialesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerCategoriaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarCategoriaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListarCategoriasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarLibroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListarLibrosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".model.PruebaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
